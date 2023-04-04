@@ -1,4 +1,4 @@
-# softwareSecurity_project
+Online Portfolio Project
 Online portfolio
 - Project developed for my online portfolio which includes all the other projects developed in self-interest & other client projects. The application is a online version of our resume. 
 
