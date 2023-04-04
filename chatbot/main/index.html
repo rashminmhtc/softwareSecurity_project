@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Chatbot</title>
+</head>
+
+<body onload="startFunction()">
+    <nav>
+        <div class="navbar">
+            <div class="personalInfo">
+                <label id="name">Q&A</label>
+                <label id="lastseen">last seen today at 3:24 pms</label>
+            </div>
+        </div>
+    </nav>
+    <div class="scrollable" id="myScrollable">
+        <div class="fullScreenDP" id="fullScreenDP">
+            <div class="insideDP">
+                <svg class="closeBTN" onclick="closeFullDP()" xmlns="http://www.w3.org/2000/svg" width="64px"
+                    viewBox="0 0 512 512" height="64px">
+                    <path class="btnColor" fill="#E04F5F"/>
+                    <path fill="#FFF"/>
+                </svg>
+            </div>
+        </div>
+        <div id="chatting" class="chatting">
+            <ul id="listUL">
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <div class="sendBar">
+            <input id="inputMSG" onkeypress="isEnter(event)" type="text" placeholder="Type a message" autofocus>
+            <svg onclick="sendMsg()" viewBox="0 0 24 24" width="24" height="24" class="">
+                <path fill="currentColor"></path>
+            </svg>
+        </div>
+    </footer>
+</body>
+</html>
